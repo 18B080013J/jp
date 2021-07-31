@@ -1,0 +1,20 @@
+{% extends 'ML/base.html' %}
+{% block title %} Hello, world!  {% endblock %}
+{% block body %}
+
+<img src="data:image/png;base64,{{ data }}" alt="" height="500" width="1000">
+
+{{det | safe}}
+<div class="row">
+    {{dflist0 | safe}}
+    {{dflist1 | safe}}
+    {{dflist2 | safe}}
+
+</div>
+
+<!--{% for key, value in context.items %}-->
+<!--    <tr>-->
+<!--        <td> {{ key.to_html | safe }} </td>-->
+<!--    </tr>-->
+<!--{% endfor %}-->
+{% endblock %}

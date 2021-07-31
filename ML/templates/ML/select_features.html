@@ -1,0 +1,44 @@
+{% extends 'ML/base.html' %}
+{% block title %} Hello, world!  {% endblock %}
+{% block body %}
+
+<!--<form action="/d" method="post">-->
+<!--    {% csrf_token %}-->
+<!--  <input type="checkbox" id="Amount" name="Amount" value="on">-->
+<!--  <label for="Amount"> Amount</label><br>-->
+<!--  <input type="checkbox" id="NIFTY_PE" name="NIFTY_PE" value="on">-->
+<!--  <label for="NIFTY_PE"> NIFTY_PE</label><br>-->
+<!--  <input type="checkbox" id="Type_of_Purchase" name="Type_of_Purchase" value="on">-->
+<!--  <label for="Type_of_Purchase"> Type_of_Purchase</label>-->
+<!--    <input type="submit" value="Submit">-->
+<!--</form>-->
+
+<form action="/d" method="post">
+    {% csrf_token %}
+ <div class="form-check">
+  <input class="form-check-input" type="checkbox" name="Amount" value="on" checked id="Amount">
+  <label class="form-check-label" for="Amount">
+    Amount
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" name="NIFTY_PE" value="on" checked id="NIFTY_PE">
+  <label class="form-check-label" for="NIFTY_PE">
+    NIFTY_PE
+  </label>
+</div>
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" name="Type_of_Purchase" value="on" checked id="Type_of_Purchase">
+  <label class="form-check-label" for="Type_of_Purchase">
+    Type_of_Purchase
+  </label>
+</div>
+    <select class="form-select" name="algo" aria-label="Default select example">
+  <option selected>Choose the algorithm</option>
+  <option value='1'selected>Kmean</option>
+  <option value='2'>DBSCAN</option>
+  <option value='3'>AgglomerativeClustering</option>
+</select>
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}

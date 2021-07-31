@@ -1,0 +1,33 @@
+{% extends 'ML/base.html' %}
+{% block title %} Hello, world!  {% endblock %}
+{% block body %}
+<form action="/f" method="post">
+    {% csrf_token %}
+  <div class="mb-3">
+    <label for="NIFTY_PE" class="form-label">Enter NIFTY_PE Value</label>
+    <input type="NIFTY_PE" class="form-control" name="NIFTY_PE" id="NIFTY_PE" aria-describedby="NIFTY_PE ">
+  </div>
+    <div class="mb-3">
+    <label for="Type_of_Purchase" class="form-label">Enter Type_of_Purchase</label>
+    <input type="Type_of_Purchase" class="form-control" name="Type_of_Purchase" id="Type_of_Purchase" aria-describedby="Type_of_Purchase ">
+  </div>
+    <select class="form-select" name="algo" aria-label="Default select example">
+  <option selected>Choose the algorithm</option>
+  <option value='1'>K-Neighbour</option>
+  <option value='2'selected>Linear Regression</option>
+  <option value='3'>Decision Tree</option>
+</select>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<form action="/f" method="post">
+    {% csrf_token %}
+<div class="input-group mb-3">
+  <div class="input-group-text">
+    <label for="NIFTY_PE" class="form-label">NIFTY_PE</label>
+    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+  </div>
+  <input type="text" class="form-control" aria-label="Text input with checkbox">
+</div>
+  </form>
+{% endblock %}
