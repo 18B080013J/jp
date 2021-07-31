@@ -43,7 +43,7 @@ sklearn==0.0
 soupsieve==2.2.1
 sqlparse==0.4.1
 sv==0.1
-TA-Lib @ file:///C:/Users/Jay%20Patil/PycharmProjects/pythonProject/TA_Lib-0.4.19-cp37-cp37m-win_amd64.whl
+TA-Lib @ file:///C:/Users/Jay%20Patil/PycharmProjects/pythonProject/TA_Lib-0.4.21-cp37-cp37m-win_amd64.whl
 tablib==3.0.0
 threadpoolctl==2.1.0
 tornado==6.1
