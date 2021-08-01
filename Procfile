@@ -1,1 +1,1 @@
-web: gunicorn bobmf.wsgi --log-file -
+web: gunicorn bobmf.wsgi:application --log-file - --log-level debug
