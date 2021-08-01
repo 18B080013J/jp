@@ -1,1 +1,0 @@
-web: gunicorn bobmf.wsgi --log-file -
