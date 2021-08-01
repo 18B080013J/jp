@@ -1,1 +1,2 @@
-web: gunicorn shany.wsgi --log-file -
+web:gunicorn shany.wsgi --log-file -
+
