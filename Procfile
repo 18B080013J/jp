@@ -1,3 +1,2 @@
-web: gunicorn bobmf.wsgi:application --log-file - --log-level debug
-python manage.py collectstatic --noinput
-manage.py migrate
+web: bundle exec bobmf server -p $PORT
+
