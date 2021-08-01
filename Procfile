@@ -1,1 +1,1 @@
-gunicorn --log-file=- bobmf.wsgi:application
+web: gunicorn --log-file=- bobmf.wsgi:application
